@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Merry Christmas & Happy New Year</title>
+
+  <!-- Mobile full screen fix -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Corner images -->
+  <img src="left.jpg" class="corner left" alt="Left Image">
+  <img src="right.jpg" class="corner right" alt="Right Image">
+
+  <!-- Content -->
+  <div class="content">
+    <h1>🎄 Merry Christmas 🎄</h1>
+    <h2>✨ Happy New Year ✨</h2>
+    <p>Wishing you joy, peace, and happiness</p>
+    <h3> </h3>
+    <h4> </h4>
+    <button onclick="playMusic()">▶ Play Song</button>
+    <h5> </h5>
+    <h6>From Walagendara Maha Vidyala - Invention Association</h6>
+    <h7> Created by Omesh Pathum D.Orgsnizer </h7>
+  </div>
+
+    <div class="tree-3d">
+  <div class="cone"></div>
+  <div class="cone c2"></div>
+  <div class="cone c3"></div>
+  <div class="trunk"></div>
+</div>
+
+  <!-- Music -->
+  <audio id="music" loop>
+    <source src="song.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Snow -->
+  <canvas id="snow"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
