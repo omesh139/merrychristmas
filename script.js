@@ -64,3 +64,16 @@ function animate() {
 }
 
 animate();
+
+
+// === MOBILE FIXES ===
+function resizeCanvas() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+resizeCanvas();
+window.addEventListener("resize", resizeCanvas);
+
+document.addEventListener("touchstart", () => {
+  if (audio.paused) audio.play();
+}, { once: true });
